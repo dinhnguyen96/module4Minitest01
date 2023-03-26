@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/layout :: head"></head>
+<body>
+<h3>View Picture</h3>
+<p>
+  <a th:href="@{/pictures/}">
+    Back to picture list
+  </a>
+</p>
+<div id="detail">
+  <div class="cusdetail">
+    <label>Picture Code:</label>
+    <label th:text="${picture.pictureCode}"></label>
+  </div>
+  <div class="cusdetail">
+    <label>Picture Width:</label>
+    <label th:text="${picture.pictureWidth}"></label>
+  </div>
+  <div class="cusdetail">
+    <label>Picture Height:</label>
+    <label th:text="${picture.pictureHeight}"></label>
+  </div>
+  <div class="cusdetail">
+    <label>Picture Material:</label>
+    <label th:text="${picture.pictureMaterial}"></label>
+  </div>
+  <div class="cusdetail">
+    <label>Picture Describe:</label>
+    <label th:text="${picture.pictureDescribe}"></label>
+  </div>
+  <div class="cusdetail">
+    <label>Picture Price:</label>
+    <label th:text="${picture.picturePrice}"></label>
+  </div>
+</div>
+<footer th:replace="/layout :: footer"></footer>
+</body>
+</html>
